@@ -2,17 +2,24 @@
 <html>
 <head>
 
-    <link rel = "stylesheet" href = "stopwatch.css">
+    <link rel = "stylesheet" href = "stoppwatch.css">
     <script src="stopwatch.js"></script>
 </head>
 <body>
-    <p>added to git</p>
+    <center>
+    <div class="clock">
     <p1 id = "minutes">00</p1>
-     <p1 id = "seconds">: 00 :</p1> 
+    <p1>:</p1>
+     <p1 id = "seconds">00</p1> 
+     <p1>:</p1>
      <p1 id = "milliseconds">00</p1>
-
-    <button onclick="alertTime()">Alert</button>
-
+    </div>
+    <br>
+        <button class="glow-on-hover" id = "buty" onclick="alertTime()">Alert</button>
+        <button class="glow-on-hover" onmouseover="changeText()">HEHE</button>
+        <br>
+        <button class="glow-on-hover" onclick="stopButton()">Stop</button>
+    </center>
 </body>
 
 
